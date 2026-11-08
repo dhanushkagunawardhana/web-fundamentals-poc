@@ -4,23 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>09-es6-and-functional-array-methods</title>
-    <style>
-      body {
-        font:
-          1rem/1.5 Arial,
-          sans-serif;
-        color: #171a20;
-        margin: 2rem;
-      }
-      button,
-      a {
-        cursor: pointer;
-      }
-      .card {
-        background: #f4f4f4;
-        padding: 1rem;
-      }
-    </style>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <main>
@@ -28,16 +12,5 @@
       <button id="action" type="button">Try it</button>
       <p id="output" aria-live="polite"></p>
     </main>
-    <script>
-      const output = document.querySelector("#output");
-      const models = [
-        { name: "Model 3", range: 321 },
-        { name: "Performance", range: 300 },
-      ];
-      const names = models
-        .filter(({ range }) => range > 300)
-        .map(({ name }) => name);
-      output.textContent = names.join(", ");
-    </script>
   </body>
 </html>

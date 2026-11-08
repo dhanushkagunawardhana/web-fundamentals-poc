@@ -4,23 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Build an interactive model picker</title>
-    <style>
-      body {
-        font:
-          1rem/1.5 Arial,
-          sans-serif;
-        color: #171a20;
-        margin: 2rem;
-      }
-      button,
-      a {
-        cursor: pointer;
-      }
-      .card {
-        background: #f4f4f4;
-        padding: 1rem;
-      }
-    </style>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <main>
@@ -28,9 +12,5 @@
       <button id="action" type="button">Try it</button>
       <p id="output" aria-live="polite">Your result appears here.</p>
     </main>
-    <script>
-      const output = document.querySelector("#output");
-      // TODO: Use DOM selection, events, modern array methods, and localStorage to switch models and remember the selection.
-    </script>
   </body>
 </html>
