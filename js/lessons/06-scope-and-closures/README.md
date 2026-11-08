@@ -2,7 +2,7 @@
 
 **Learn:** A closure remembers variables from its surrounding function.
 
-1. Open [the example](example.html) in a browser.
+1. Open [the example](index.html) in a browser.
 2. Find the code that demonstrates this idea; change one value and refresh.
 3. After lesson 10, complete activity [02 Build an interactive model picker](../../activities/02-interactive-model-picker/README.md).
 

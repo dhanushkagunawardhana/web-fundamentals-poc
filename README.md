@@ -1,8 +1,8 @@
 # Web Fundamentals
 
-A beginner path to the [Tesla practice page](../tesla-web-poc/README.md). Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any `example.html` or `starter.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
+A beginner path to the [Tesla practice page](../tesla-web-poc/README.md). Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
 
-For each lesson: read its README, open `example.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Activity starters contain TODO prompts. The Tesla project is a reference, not an answer key.
+For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
 ## HTML
 
