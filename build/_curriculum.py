@@ -21,16 +21,16 @@ COURSE = {
         ("TESLA-PAGE-OUTLINE", "Put the semantic building blocks together before styling.", '<header><nav aria-label="Main navigation"><a href="#meet">Meet</a> <a href="#specs">Specs</a></nav></header><main><section id="hero"><h1>Model 3</h1></section><section id="meet"><h2>Meet Model 3</h2></section><section id="specs"><h2>Specs</h2></section></main><footer>Classroom recreation</footer>', ("OUTLINE-TESLA-SECTIONS", "Create hero, meet, features, charging, and specs sections."), ("ASSEMBLE-SEMANTIC-MARKUP", "Add a header, main, sections, image, buttons, and footer.")),
     ],
     "css": [
-        ("SELECTORS-AND-RULES", "Selectors choose elements; declarations set their appearance.", "h1 { color: #171a20; } .note { color: #555; }", ("TARGET-ELEMENTS", "Style every h1 with a selector."), ("ADD-CLASSES", "Give one paragraph a class and style only that paragraph.")),
-        ("COLORS-AND-TYPOGRAPHY", "Color, font size, weight, and line height establish hierarchy.", "body { color: #171a20; font-family: Arial, sans-serif; } h1 { font-size: 3rem; } p { line-height: 1.6; color: #555; }", ("STYLE-HEADINGS", "Make the heading larger and bolder than the paragraph."), ("SET-A-COLOR-PALETTE", "Use one dark text color, one muted color, and one accent color.")),
-        ("BOX-MODEL", "Content, padding, border, and margin form an element's box.", ".card { padding: 1.5rem; border: 1px solid #ddd; border-radius: .5rem; margin: 1rem 0; }", ("BUILD-A-CARD", "Add padding, border, and rounded corners to a card."), ("INSPECT-BOX-SPACING", "Change padding and margin separately; note which moves content and which moves the card.")),
-        ("SIZING-AND-SPACING", "Max-width and relative units keep content comfortable to read.", ".card { max-width: 32rem; width: 90%; margin: 2rem auto; padding: 1rem; } img { max-width: 100%; }", ("SET-WIDTHS", "Limit a content card's width while keeping it fluid."), ("SPACE-SECTIONS", "Add consistent padding between two sections.")),
-        ("FLEXBOX", "Flexbox aligns items along one main axis.", ".row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }", ("ALIGN-NAVIGATION", "Use flex to spread a logo and links across a row."), ("ALIGN-BUTTONS", "Place two buttons side by side with a gap.")),
-        ("POSITIONING-AND-LAYERS", "Relative and absolute positioning can layer text over a hero.", ".hero { position: relative; min-height: 16rem; background: #555; color: white; } .hero::before { content: ''; position: absolute; inset: 0; background: #0007; } .hero > * { position: relative; z-index: 1; }", ("PLACE-HERO-TEXT", "Position a heading over a hero background."), ("ADD-IMAGE-OVERLAY", "Add a translucent overlay so white hero text stays readable.")),
-        ("GRID-BASICS", "Grid divides a container into rows and columns.", ".grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }", ("CREATE-TWO-COLUMNS", "Put an image and text in two equal grid columns."), ("CREATE-A-SPECS-GRID", "Display three spec cards in three grid columns.")),
-        ("GRID-PAGE-SECTIONS", "Grid can repeat page patterns with different column proportions.", ".grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2rem; align-items: center; }", ("BUILD-A-FEATURE-PANEL", "Create an image and text feature panel using grid."), ("BUILD-A-CHARGING-SECTION", "Create a charging description beside two stat cards.")),
-        ("RESPONSIVE-DESIGN", "Flexible widths and images adapt before a breakpoint is needed.", ".card { width: min(90%, 60rem); margin-inline: auto; } img { display: block; max-width: 100%; height: auto; }", ("MAKE-IMAGES-FLEXIBLE", "Keep an image inside its container at narrow widths."), ("STACK-COLUMNS", "Make a two-column layout become one column on small screens.")),
-        ("MEDIA-QUERIES", "A media query applies rules only when its condition matches.", ".grid { display: grid; grid-template-columns: 1fr; gap: 1rem; } @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }", ("CHANGE-LAYOUT-AT-A-BREAKPOINT", "Use a media query to switch from one to two columns."), ("ADJUST-MOBILE-SPACING", "Reduce heading size and page padding on narrow screens.")),
+        ("SELECTORS-AND-RULES", "Start with style attributes on elements; later lessons move shared rules into CSS selectors.", "h1 { color: #171a20; } .note { color: #555; }", ("TARGET-ELEMENTS", "Style every h1 with a selector."), ("ADD-CLASSES", "Give one paragraph a class and style only that paragraph.")),
+        ("COLORS-AND-TYPOGRAPHY", "Color, font size, weight, and line height establish hierarchy.", "body { color: #171a20; font-family: Arial, sans-serif; } h1 { font-size: 48px; } p { line-height: 26px; color: #555; }", ("STYLE-HEADINGS", "Make the heading larger and bolder than the paragraph."), ("SET-A-COLOR-PALETTE", "Use one dark text color, one muted color, and one accent color.")),
+        ("BOX-MODEL", "Content, padding, border, and margin form an element's box.", ".card { padding: 24px; border: 1px solid #ddd; border-radius: 8px; margin: 16px 0; }", ("BUILD-A-CARD", "Add padding, border, and rounded corners to a card."), ("INSPECT-BOX-SPACING", "Change padding and margin separately; note which moves content and which moves the card.")),
+        ("SIZING-AND-SPACING", "Max-width and relative units keep content comfortable to read.", ".card { max-width: 512px; width: 90%; margin: 32px auto; padding: 16px; } img { max-width: 100%; }", ("SET-WIDTHS", "Limit a content card's width while keeping it fluid."), ("SPACE-SECTIONS", "Add consistent padding between two sections.")),
+        ("FLEXBOX", "Flexbox aligns items along one main axis.", ".row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }", ("ALIGN-NAVIGATION", "Use flex to spread a logo and links across a row."), ("ALIGN-BUTTONS", "Place two buttons side by side with a gap.")),
+        ("POSITIONING-AND-LAYERS", "Relative and absolute positioning can layer text over a hero.", ".hero { position: relative; min-height: 256px; background: #555; color: white; } .hero::before { content: ''; position: absolute; inset: 0; background: #0007; } .hero > * { position: relative; z-index: 1; }", ("PLACE-HERO-TEXT", "Position a heading over a hero background."), ("ADD-IMAGE-OVERLAY", "Add a translucent overlay so white hero text stays readable.")),
+        ("GRID-BASICS", "Grid divides a container into rows and columns.", ".grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }", ("CREATE-TWO-COLUMNS", "Put an image and text in two equal grid columns."), ("CREATE-A-SPECS-GRID", "Display three spec cards in three grid columns.")),
+        ("GRID-PAGE-SECTIONS", "Grid can repeat page patterns with different column proportions.", ".grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; }", ("BUILD-A-FEATURE-PANEL", "Create an image and text feature panel using grid."), ("BUILD-A-CHARGING-SECTION", "Create a charging description beside two stat cards.")),
+        ("RESPONSIVE-DESIGN", "Flexible widths and images adapt before a breakpoint is needed.", ".card { width: min(90%, 960px); margin-inline: auto; } img { display: block; max-width: 100%; height: auto; }", ("MAKE-IMAGES-FLEXIBLE", "Keep an image inside its container at narrow widths."), ("STACK-COLUMNS", "Make a two-column layout become one column on small screens.")),
+        ("MEDIA-QUERIES", "A media query applies rules only when its condition matches.", ".grid { display: grid; grid-template-columns: 1fr; gap: 16px; } @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }", ("CHANGE-LAYOUT-AT-A-BREAKPOINT", "Use a media query to switch from one to two columns."), ("ADJUST-MOBILE-SPACING", "Reduce heading size and page padding on narrow screens.")),
     ],
     "tailwind": [
         ("UTILITY-CLASSES", "A utility class applies one small style directly in HTML.", '<h1 class="text-4xl font-bold">Model 3</h1><button class="rounded bg-blue-600 px-5 py-2 text-white">Explore</button>', ("STYLE-A-HEADING", "Style a heading with size and weight utilities."), ("STYLE-A-BUTTON", "Style a button with color, padding, and radius utilities.")),
@@ -58,31 +58,61 @@ COURSE = {
     ],
 }
 
-BASE_CSS = "body{font:1rem/1.5 Arial,sans-serif;color:#171a20;margin:2rem}button,a{cursor:pointer}.card{background:#f4f4f4;padding:1rem}"
+BASE_CSS = "body{font-size: 16px; line-height: 24px; font-family: Arial, sans-serif;color:#171a20;margin:32px}button,a{cursor:pointer}.card{background:#f4f4f4;padding:16px}"
 
-def page(title, body, style="", script="", tailwind=False):
+def page(title, body, style="", script="", tailwind=False, stylesheet=""):
     cdn = '<script src="https://cdn.tailwindcss.com"></script>' if tailwind else ""
-    css = f"<style>{BASE_CSS if not tailwind else ''}\n{style}</style>" if not tailwind else ""
+    css = f'<link rel="stylesheet" href="{stylesheet}">' if stylesheet else (f"<style>{BASE_CSS if not tailwind else ''}\n{style}</style>" if not tailwind else "")
     js = f"<script>{script}</script>" if script else ""
     return f'<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{escape(title)}</title>\n{cdn}{css}\n</head>\n<body>\n{body}\n{js}\n</body>\n</html>\n'
 
-def example(subject, title, demonstration):
+def example(subject, title, demonstration, external_css=False):
     if subject == "html":
         return page(title, demonstration)
     if subject == "css":
+        if title == "01-selectors-and-rules":
+            return '''<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>01-selectors-and-rules</title>
+  </head>
+  <body style="font-size: 16px; line-height: 24px; font-family: Arial, sans-serif; color: #171a20; margin: 32px;">
+    <header style="padding: 16px; background: #f4f4f4;">
+      <strong>TESLA</strong>
+      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
+    </header>
+    <main>
+      <section style="background: #f4f4f4; padding: 16px; margin-top: 16px;">
+        <h1 style="color: #171a20;">Model 3</h1>
+        <p style="color: #555;">Electric sedan</p>
+      </section>
+      <section id="feature" style="background: #f4f4f4; padding: 16px; margin-top: 16px;">
+        <div>Feature image</div>
+        <div>Feature copy</div>
+      </section>
+      <section id="specs" style="margin-top: 16px;">
+        <div style="background: #f4f4f4; padding: 16px;">321 mi range</div>
+        <div style="background: #f4f4f4; padding: 16px;">5 seats</div>
+      </section>
+    </main>
+  </body>
+</html>
+'''
         body = '<header class="row"><strong>TESLA</strong><nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav></header><main><section class="hero card"><h1>Model 3</h1><p class="note">Electric sedan</p></section><section id="feature" class="grid card"><div>Feature image</div><div>Feature copy</div></section><section id="specs" class="grid"><div class="card">321 mi range</div><div class="card">5 seats</div></section></main>'
-        return page(title, body, demonstration)
+        return page(title, body, demonstration, stylesheet="styles.css" if external_css else "")
     if subject == "tailwind":
         return page(title, demonstration, tailwind=True)
     body = '<main><h1 id="title">Model 3</h1><button id="action" type="button">Try it</button><p id="output" aria-live="polite"></p></main>'
     return page(title, body, script='const output = document.querySelector("#output");\n' + demonstration)
 
-def starter(subject, title, task):
+def starter(subject, title, task, external_css=False):
     marker = f"<!-- TODO: {escape(task)} -->"
     if subject == "html":
         return page(title, marker + '\n<main><h1>Model 3 practice</h1></main>')
     if subject == "css":
-        return page(title, '<main><h1>Model 3</h1><p class="note">Electric sedan</p><div class="card">Feature card</div><div class="grid"><div>Range</div><div>Seats</div></div></main>', style=f"/* TODO: {task} */\n")
+        return page(title, '<main><h1>Model 3</h1><p class="note">Electric sedan</p><div class="card">Feature card</div><div class="grid"><div>Range</div><div>Seats</div></div></main>', style=f"/* TODO: {task} */\n", stylesheet="styles.css" if external_css else "")
     if subject == "tailwind":
         return page(title, marker + '\n<main><h1>Model 3</h1><p>Electric sedan</p><button type="button">Explore</button><section><div>Image</div><div>Feature copy</div></section></main>', tailwind=True)
     body = '<main><h1 id="title">Model 3</h1><button id="action" type="button">Try it</button><p id="output" aria-live="polite">Your result appears here.</p></main>'
@@ -119,7 +149,10 @@ def clean_generated_activities(subject):
         if not folder.is_dir() or folder.resolve().parent != parent:
             raise ValueError(f"Unexpected activity entry: {folder}")
         files = {item.name for item in folder.iterdir()}
-        if files != {"README.md", "starter.html"}:
+        expected = {"README.md", "starter.html"}
+        if subject == "css" and folder.name == ACTIVITIES[subject][1][0]:
+            expected.add("styles.css")
+        if files != expected:
             raise ValueError(f"Activity has unexpected files; refusing removal: {folder}")
         shutil.rmtree(folder)
 
@@ -129,7 +162,10 @@ for subject, lessons in COURSE.items():
     clean_generated_activities(subject)
     for number, (folder_name, title, task) in enumerate(ACTIVITIES[subject], 1):
         activity_dir = ROOT / subject / "activities" / folder_name
-        write(activity_dir / "starter.html", starter(subject, title, task))
+        external_css = subject == "css" and number == 2
+        if external_css:
+            write(activity_dir / "styles.css", BASE_CSS + "\n/* TODO: " + task + " */\n")
+        write(activity_dir / "starter.html", starter(subject, title, task, external_css=external_css))
         lesson_range = "01–05" if number == 1 else "06–10"
         write(activity_dir / "README.md", f"# Activity {number:02d}: {title}\n\n**Use lessons {lesson_range}.** {task}\n\n1. Open `starter.html` in a browser.\n2. Edit its TODO and save. Refresh to check your work.\n3. Use the relevant lesson examples when you need a reminder.\n\n**Done when:** The page demonstrates all the listed skills and you can explain what you changed.\n")
 
@@ -140,7 +176,9 @@ for subject, lessons in COURSE.items():
         activity_number = 1 if index <= 5 else 2
         activity_folder, activity_title, _ = ACTIVITIES[subject][activity_number - 1]
         activity_link = f"[{activity_number:02d} {activity_title}](../../activities/{activity_folder}/README.md)"
-        write(lesson_dir / "example.html", example(subject, lesson_name, demo))
+        if subject == "css" and index >= 6:
+            write(lesson_dir / "styles.css", BASE_CSS + "\n" + demo + "\n")
+        write(lesson_dir / "example.html", example(subject, lesson_name, demo, external_css=subject == "css" and index >= 6))
         write(lesson_dir / "README.md", f"# Lesson {index:02d}: {slug.replace('-', ' ').title()}\n\n**Learn:** {concept}\n\n1. Open [the example](example.html) in a browser.\n2. Find the code that demonstrates this idea; change one value and refresh.\n3. After lesson {'05' if index <= 5 else '10'}, complete activity {activity_link}.\n\n**Tesla connection:** Look for this idea in [`tesla-web-poc`](../../../../tesla-web-poc/README.md): its page structure, styles, Tailwind classes, or JavaScript controls.\n")
         readme.append(f"{index:02d}. [{slug.replace('-', ' ').title()}]({subject}/lessons/{lesson_name}/README.md)")
     readme += ["", f"Activities: [01 {ACTIVITIES[subject][0][1]}]({subject}/activities/{ACTIVITIES[subject][0][0]}/README.md) · [02 {ACTIVITIES[subject][1][1]}]({subject}/activities/{ACTIVITIES[subject][1][0]}/README.md)", ""]

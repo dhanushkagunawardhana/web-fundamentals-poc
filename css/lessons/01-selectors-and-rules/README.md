@@ -1,6 +1,6 @@
 # Lesson 01: Selectors And Rules
 
-**Learn:** Selectors choose elements; declarations set their appearance.
+**Learn:** Start with `style` attributes on elements; later lessons move shared rules into CSS selectors. Notice that the card styles must be repeated here.
 
 1. Open [the example](example.html) in a browser.
 2. Find the code that demonstrates this idea; change one value and refresh.

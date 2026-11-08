@@ -1,0 +1,16 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+  color: #171a20;
+  margin: 32px;
+}
+button,
+a {
+  cursor: pointer;
+}
+.card {
+  background: #f4f4f4;
+  padding: 16px;
+}
+/* TODO: Use positioning, grid, flexible sizing, and a media query to create a hero and feature panel that work at narrow widths. */

@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+  color: #171a20;
+  margin: 32px;
+}
+button,
+a {
+  cursor: pointer;
+}
+.card {
+  background: #f4f4f4;
+  padding: 16px;
+}
+.hero {
+  position: relative;
+  min-height: 256px;
+  background: #555;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0007;
+}
+.hero > * {
+  position: relative;
+  z-index: 1;
+}

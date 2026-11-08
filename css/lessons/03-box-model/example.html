@@ -1,14 +1,51 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>03-box-model</title>
-<style>body{font:1rem/1.5 Arial,sans-serif;color:#171a20;margin:2rem}button,a{cursor:pointer}.card{background:#f4f4f4;padding:1rem}
-.card { padding: 1.5rem; border: 1px solid #ddd; border-radius: .5rem; margin: 1rem 0; }</style>
-</head>
-<body>
-<header class="row"><strong>TESLA</strong><nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav></header><main><section class="hero card"><h1>Model 3</h1><p class="note">Electric sedan</p></section><section id="feature" class="grid card"><div>Feature image</div><div>Feature copy</div></section><section id="specs" class="grid"><div class="card">321 mi range</div><div class="card">5 seats</div></section></main>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>03-box-model</title>
+    <style>
+      body {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Arial, sans-serif;
+        color: #171a20;
+        margin: 32px;
+      }
+      button,
+      a {
+        cursor: pointer;
+      }
+      .card {
+        background: #f4f4f4;
+        padding: 16px;
+      }
+      .card {
+        padding: 24px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="row">
+      <strong>TESLA</strong>
+      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
+    </header>
+    <main>
+      <section class="hero card">
+        <h1>Model 3</h1>
+        <p class="note">Electric sedan</p>
+      </section>
+      <section id="feature" class="grid card">
+        <div>Feature image</div>
+        <div>Feature copy</div>
+      </section>
+      <section id="specs" class="grid">
+        <div class="card">321 mi range</div>
+        <div class="card">5 seats</div>
+      </section>
+    </main>
+  </body>
 </html>
