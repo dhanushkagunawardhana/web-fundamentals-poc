@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Beginner HTML, CSS, Tailwind CSS, and JavaScript lessons and activities."
+    />
+    <title>Web Fundamentals Curriculum</title>
+    <style>
+      body {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Arial, sans-serif;
+        color: #17212e;
+        background: #f5f7fa;
+      }
+      a {
+        color: #174ea6;
+      }
+      a:focus-visible {
+        outline: 3px solid #174ea6;
+        outline-offset: 3px;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      header {
+        background: #17212e;
+        color: white;
+      }
+      header a {
+        color: white;
+      }
+      h1 {
+        font-size: 36px;
+        line-height: 44px;
+        margin: 24px 0 12px;
+      }
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 0;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px 0;
+      }
+      section {
+        background: white;
+        border: 1px solid #dce2e8;
+        border-radius: 8px;
+        padding: 24px;
+        margin: 24px 0;
+      }
+      ol {
+        padding-left: 28px;
+        columns: 2;
+        column-gap: 40px;
+      }
+      li {
+        break-inside: avoid;
+        padding: 4px 0;
+      }
+      .activities {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .activity {
+        border-top: 1px solid #dce2e8;
+        padding-top: 12px;
+      }
+      .activity p {
+        margin: 8px 0;
+      }
+      footer {
+        padding: 24px 0 40px;
+        color: #526071;
+      }
+      @media (max-width: 680px) {
+        ol {
+          columns: 1;
+        }
+        .activities {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Web Fundamentals</h1>
+        <p>
+          Learn HTML, CSS, Tailwind CSS, and JavaScript through small Model 3
+          exercises.
+        </p>
+        <nav aria-label="Subjects">
+          <a href="#html">HTML</a>
+          <a href="#css">CSS</a>
+          <a href="#tailwindcss">Tailwind CSS</a>
+          <a href="#js">JavaScript</a>
+          <a href="#final-project">Final project</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <p>
+        Open a lesson, then try its activities. Each activity has a student task
+        and a worked solution. HTML pages are intentionally unstyled until the
+        CSS section.
+      </p>
+      <section id="html" aria-labelledby="html-title">
+        <h2 id="html-title">HTML</h2>
+        <p>Build clear page structure with semantic elements.</p>
+        <h3>Lessons</h3>
+        <ol>
+          <li>
+            <a href="html/lessons/01-page-skeleton/index.html">Page Skeleton</a>
+          </li>
+          <li>
+            <a href="html/lessons/02-text-and-headings/index.html"
+              >Text And Headings</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/03-links-and-navigation/index.html"
+              >Links And Navigation</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/04-images-and-alt-text/index.html"
+              >Images And Alt Text</a
+            >
+          </li>
+          <li><a href="html/lessons/05-lists/index.html">Lists</a></li>
+          <li>
+            <a href="html/lessons/06-semantic-landmarks/index.html"
+              >Semantic Landmarks</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/07-sections-and-articles/index.html"
+              >Sections And Articles</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/08-buttons-and-basic-forms/index.html"
+              >Buttons And Basic Forms</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/09-accessible-page-structure/index.html"
+              >Accessible Page Structure</a
+            >
+          </li>
+          <li>
+            <a href="html/lessons/10-tesla-page-outline/index.html"
+              >Tesla Page Outline</a
+            >
+          </li>
+        </ol>
+        <h3>Activities</h3>
+        <div class="activities">
+          <div class="activity">
+            <strong>Build a small Model 3 page</strong>
+            <p>
+              <a href="html/activities/01-build-a-model-page/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="html/activities/01-build-a-model-page/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+          <div class="activity">
+            <strong>Structure the Tesla page</strong>
+            <p>
+              <a
+                href="html/activities/02-structure-the-tesla-page/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="html/activities/02-structure-the-tesla-page/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="css" aria-labelledby="css-title">
+        <h2 id="css-title">CSS</h2>
+        <p>Style content, build grids, and adapt layouts.</p>
+        <h3>Lessons</h3>
+        <ol>
+          <li>
+            <a href="css/lessons/01-selectors-and-rules/index.html"
+              >Selectors And Rules</a
+            >
+          </li>
+          <li>
+            <a href="css/lessons/02-colors-and-typography/index.html"
+              >Colors And Typography</a
+            >
+          </li>
+          <li><a href="css/lessons/03-box-model/index.html">Box Model</a></li>
+          <li>
+            <a href="css/lessons/04-sizing-and-spacing/index.html"
+              >Sizing And Spacing</a
+            >
+          </li>
+          <li><a href="css/lessons/05-flexbox/index.html">Flexbox</a></li>
+          <li>
+            <a href="css/lessons/06-positioning-and-layers/index.html"
+              >Positioning And Layers</a
+            >
+          </li>
+          <li>
+            <a href="css/lessons/07-grid-basics/index.html">Grid Basics</a>
+          </li>
+          <li>
+            <a href="css/lessons/08-grid-page-sections/index.html"
+              >Grid Page Sections</a
+            >
+          </li>
+          <li>
+            <a href="css/lessons/09-responsive-design/index.html"
+              >Responsive Design</a
+            >
+          </li>
+          <li>
+            <a href="css/lessons/10-media-queries/index.html">Media Queries</a>
+          </li>
+        </ol>
+        <h3>Activities</h3>
+        <div class="activities">
+          <div class="activity">
+            <strong>Style a Model 3 card</strong>
+            <p>
+              <a href="css/activities/01-style-a-model-card/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a href="css/activities/01-style-a-model-card/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+          <div class="activity">
+            <strong>Build a responsive layout</strong>
+            <p>
+              <a
+                href="css/activities/02-build-a-responsive-layout/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="css/activities/02-build-a-responsive-layout/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="tailwindcss" aria-labelledby="tailwindcss-title">
+        <h2 id="tailwindcss-title">Tailwind CSS</h2>
+        <p>Compose page sections with utility classes.</p>
+        <h3>Lessons</h3>
+        <ol>
+          <li>
+            <a href="tailwindcss/lessons/01-utility-classes/index.html"
+              >Utility Classes</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/02-typography-and-color/index.html"
+              >Typography And Color</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/03-spacing-and-sizing/index.html"
+              >Spacing And Sizing</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/04-flex-utilities/index.html"
+              >Flex Utilities</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/05-grid-utilities/index.html"
+              >Grid Utilities</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/06-backgrounds-and-borders/index.html"
+              >Backgrounds And Borders</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/07-hover-and-focus-states/index.html"
+              >Hover And Focus States</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/08-responsive-prefixes/index.html"
+              >Responsive Prefixes</a
+            >
+          </li>
+          <li>
+            <a
+              href="tailwindcss/lessons/09-combining-utilities-into-sections/index.html"
+              >Combining Utilities Into Sections</a
+            >
+          </li>
+          <li>
+            <a href="tailwindcss/lessons/10-tesla-page-styling/index.html"
+              >Tesla Page Styling</a
+            >
+          </li>
+        </ol>
+        <h3>Activities</h3>
+        <div class="activities">
+          <div class="activity">
+            <strong>Style a hero with Tailwind</strong>
+            <p>
+              <a href="tailwindcss/activities/01-style-a-hero/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="tailwindcss/activities/01-style-a-hero/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+          <div class="activity">
+            <strong>Style Tesla sections with Tailwind</strong>
+            <p>
+              <a
+                href="tailwindcss/activities/02-style-tesla-sections/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="tailwindcss/activities/02-style-tesla-sections/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="js" aria-labelledby="js-title">
+        <h2 id="js-title">JavaScript</h2>
+        <p>Add data, events, DOM updates, and saved preferences.</p>
+        <h3>Lessons</h3>
+        <ol>
+          <li>
+            <a href="js/lessons/01-values-and-data-types/index.html"
+              >Values And Data Types</a
+            >
+          </li>
+          <li>
+            <a href="js/lessons/02-variables-and-operators/index.html"
+              >Variables And Operators</a
+            >
+          </li>
+          <li><a href="js/lessons/03-conditions/index.html">Conditions</a></li>
+          <li>
+            <a href="js/lessons/04-arrays-and-objects/index.html"
+              >Arrays And Objects</a
+            >
+          </li>
+          <li><a href="js/lessons/05-functions/index.html">Functions</a></li>
+          <li>
+            <a href="js/lessons/06-scope-and-closures/index.html"
+              >Scope And Closures</a
+            >
+          </li>
+          <li>
+            <a href="js/lessons/07-dom-selection-and-updates/index.html"
+              >Dom Selection And Updates</a
+            >
+          </li>
+          <li>
+            <a href="js/lessons/08-events-and-interactive-tabs/index.html"
+              >Events And Interactive Tabs</a
+            >
+          </li>
+          <li>
+            <a href="js/lessons/09-es6-and-functional-array-methods/index.html"
+              >Es6 And Functional Array Methods</a
+            >
+          </li>
+          <li>
+            <a href="js/lessons/10-local-storage/index.html">Local Storage</a>
+          </li>
+        </ol>
+        <h3>Activities</h3>
+        <div class="activities">
+          <div class="activity">
+            <strong>Build a model data summary</strong>
+            <p>
+              <a href="js/activities/01-model-data-summary/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a href="js/activities/01-model-data-summary/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+          <div class="activity">
+            <strong>Build an interactive model picker</strong>
+            <p>
+              <a
+                href="js/activities/02-interactive-model-picker/task/index.html"
+                >Student task</a
+              >
+              ·
+              <a
+                href="js/activities/02-interactive-model-picker/solution/index.html"
+                >Worked solution</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="final-project" aria-labelledby="final-title">
+        <h2 id="final-title">Final project</h2>
+        <p>
+          Build your own Model 3 page using the skills from all four subjects.
+        </p>
+        <ol>
+          <li>
+            Write a semantic header, hero, features, charging, specs, and
+            footer.
+          </li>
+          <li>Style the page with CSS grid and responsive rules.</li>
+          <li>Use Tailwind utilities for buttons and feature cards.</li>
+          <li>Add JavaScript for hero controls and feature tabs.</li>
+        </ol>
+      </section>
+    </main>
+    <footer class="wrap">
+      Classroom practice curriculum · Tailwind examples require an internet
+      connection.
+    </footer>
+  </body>
+</html>

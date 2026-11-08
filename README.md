@@ -1,10 +1,20 @@
 # Web Fundamentals
 
-A beginner path to the [Tesla practice page](../tesla-web-poc/README.md). Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
+A beginner path to the [final project](index.html#final-project). Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
 The HTML lessons and activities are intentionally unstyled. Students learn CSS in the next subject.
+
+## Publish with GitHub Pages
+
+This repository is a static site. Its root `index.html` links to every lesson and activity; each lesson, task, and solution directory has its own `index.html`.
+
+1. Push the curriculum to the `main` branch of `dhanushkagunawardhana/web-fundamentals-poc`.
+2. In the GitHub repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, then save.
+3. Visit `https://dhanushkagunawardhana.github.io/web-fundamentals-poc/`. A lesson URL follows its folder path, for example `html/lessons/01-page-skeleton/`. Activity URLs end in `task/` or `solution/`.
+
+No build step is needed for the site. Tailwind examples still load the Tailwind CDN and need an internet connection.
 
 ## Formatting for maintainers
 
@@ -72,7 +82,7 @@ Activities: [01 Build a model data summary](js/activities/01-model-data-summary/
 
 ## Final bridge exercise
 
-Build a small Model 3 page in a new folder using the [Tesla reference](../tesla-web-poc/README.md):
+Build a small Model 3 page in a new folder using the [curriculum home page](index.html#final-project):
 
 1. Mark up a header, navigation, hero, features, charging, specs, and footer with semantic HTML.
 2. Style the layout with CSS grid and spacing; use Tailwind utilities for the hero, buttons, and cards.

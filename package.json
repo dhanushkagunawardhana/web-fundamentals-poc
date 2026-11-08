@@ -2,8 +2,8 @@
   "name": "web-fundamentals-poc",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"{html,css,tailwindcss,js}/**/*.{html,css,js}\"",
-    "format:check": "prettier --check \"{html,css,tailwindcss,js}/**/*.{html,css,js}\""
+    "format": "prettier --write index.html \"{html,css,tailwindcss,js}/**/*.{html,css,js}\"",
+    "format:check": "prettier --check index.html \"{html,css,tailwindcss,js}/**/*.{html,css,js}\""
   },
   "devDependencies": {
     "prettier": "3.9.10"
