@@ -80,9 +80,12 @@ Activities: [01 Style a hero with Tailwind](tailwindcss/activities/01-style-a-he
 
 Activities: [01 Build a model data summary](js/activities/01-model-data-summary/README.md) · [02 Build an interactive model picker](js/activities/02-interactive-model-picker/README.md)
 
-## Final bridge exercise
+## Final Project
 
-Build a small Model 3 page in a new folder using the [curriculum home page](index.html#final-project):
+Build a small Model 3 page in a new folder. Use these references:
+
+- [Tesla Model 3 page](https://www.tesla.com/model3) for the original design.
+- [Finished classroom design](https://dhanushkagunawardhana.github.io/tesla-web-poc/) for the expected result.
 
 1. Mark up a header, navigation, hero, features, charging, specs, and footer with semantic HTML.
 2. Style the layout with CSS grid and spacing; use Tailwind utilities for the hero, buttons, and cards.
