@@ -1,21 +1,26 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Model summary solution</title>
-  
-</head>
-<body>
-<main><h1>Model summary</h1><p id="output" aria-live="polite"></p></main>
-<script>
-const models = [{ name: "Model 3", range: 321, seats: 5 }, { name: "Performance", range: 300, seats: 5 }];
-function describe(model) {
-  const label = model.range >= 320 ? "long range" : "standard range";
-  return `${model.name}: ${model.range} miles, ${model.seats} seats (${label}).`;
-}
-const selectedModel = models[0];
-document.querySelector("#output").textContent = describe(selectedModel);
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Model summary solution</title>
+  </head>
+  <body>
+    <main>
+      <h1>Model summary</h1>
+      <p id="output" aria-live="polite"></p>
+    </main>
+    <script>
+      const models = [
+        { name: "Model 3", range: 321, seats: 5 },
+        { name: "Performance", range: 300, seats: 5 },
+      ];
+      function describe(model) {
+        const label = model.range >= 320 ? "long range" : "standard range";
+        return `${model.name}: ${model.range} miles, ${model.seats} seats (${label}).`;
+      }
+      const selectedModel = models[0];
+      document.querySelector("#output").textContent = describe(selectedModel);
+    </script>
+  </body>
 </html>

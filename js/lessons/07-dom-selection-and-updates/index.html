@@ -1,15 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>07-dom-selection-and-updates</title>
-<style>body{font:1rem/1.5 Arial,sans-serif;color:#171a20;margin:2rem}button,a{cursor:pointer}.card{background:#f4f4f4;padding:1rem}
-</style>
-</head>
-<body>
-<main><h1 id="title">Model 3</h1><button id="action" type="button">Try it</button><p id="output" aria-live="polite"></p></main>
-<script>const output = document.querySelector("#output");
-const heading = document.querySelector("#title"); heading.textContent = "Model 3 Performance"; output.textContent = heading.textContent;</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>07-dom-selection-and-updates</title>
+    <style>
+      body {
+        font:
+          1rem/1.5 Arial,
+          sans-serif;
+        color: #171a20;
+        margin: 2rem;
+      }
+      button,
+      a {
+        cursor: pointer;
+      }
+      .card {
+        background: #f4f4f4;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Model 3</h1>
+      <button id="action" type="button">Try it</button>
+      <p id="output" aria-live="polite"></p>
+    </main>
+    <script>
+      const output = document.querySelector("#output");
+      const heading = document.querySelector("#title");
+      heading.textContent = "Model 3 Performance";
+      output.textContent = heading.textContent;
+    </script>
+  </body>
 </html>

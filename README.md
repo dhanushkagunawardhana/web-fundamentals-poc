@@ -4,6 +4,10 @@ A beginner path to the [Tesla practice page](../tesla-web-poc/README.md). Work t
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
+## Formatting for maintainers
+
+Open this folder in VS Code and install the recommended Prettier extension to format HTML, CSS, and JavaScript when saving. For the whole curriculum, install the formatter with `npm install`, then run `npm run format`. Use `npm run format:check` to check formatting without changing files. Students can open the lesson and activity pages without installing npm packages.
+
 ## HTML
 
 01. [Page Skeleton](html/lessons/01-page-skeleton/README.md)
