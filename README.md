@@ -1,6 +1,6 @@
 # Web Fundamentals
 
-A beginner path to the [final project](index.html#final-project). Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
+Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
@@ -20,7 +20,11 @@ No build step is needed for the site. Tailwind examples still load the Tailwind 
 
 Open this folder in VS Code and install the recommended Prettier extension to format HTML, CSS, and JavaScript when saving. For the whole curriculum, install the formatter with `npm install`, then run `npm run format`. Use `npm run format:check` to check formatting without changing files. Students can open the lesson and activity pages without installing npm packages.
 
-## HTML
+## Curriculum
+
+### HTML
+
+#### Lessons
 
 01. [Page Skeleton](html/lessons/01-page-skeleton/README.md)
 02. [Text And Headings](html/lessons/02-text-and-headings/README.md)
@@ -33,9 +37,14 @@ Open this folder in VS Code and install the recommended Prettier extension to fo
 09. [Accessible Page Structure](html/lessons/09-accessible-page-structure/README.md)
 10. [Tesla Page Outline](html/lessons/10-tesla-page-outline/README.md)
 
-Activities: [01 Build a small Model 3 page](html/activities/01-build-a-model-page/README.md) · [02 Structure the Tesla page](html/activities/02-structure-the-tesla-page/README.md)
+#### Activities
 
-## CSS
+01. [Build a small Model 3 page](html/activities/01-build-a-model-page/README.md)
+02. [Structure the Tesla page](html/activities/02-structure-the-tesla-page/README.md)
+
+### CSS
+
+#### Lessons
 
 01. [Selectors And Rules](css/lessons/01-selectors-and-rules/README.md)
 02. [Colors And Typography](css/lessons/02-colors-and-typography/README.md)
@@ -48,9 +57,14 @@ Activities: [01 Build a small Model 3 page](html/activities/01-build-a-model-pag
 09. [Responsive Design](css/lessons/09-responsive-design/README.md)
 10. [Media Queries](css/lessons/10-media-queries/README.md)
 
-Activities: [01 Style a Model 3 card](css/activities/01-style-a-model-card/README.md) · [02 Build a responsive layout](css/activities/02-build-a-responsive-layout/README.md)
+#### Activities
 
-## TAILWIND
+01. [Style a Model 3 card](css/activities/01-style-a-model-card/README.md)
+02. [Build a responsive layout](css/activities/02-build-a-responsive-layout/README.md)
+
+### Tailwind CSS
+
+#### Lessons
 
 01. [Utility Classes](tailwindcss/lessons/01-utility-classes/README.md)
 02. [Typography And Color](tailwindcss/lessons/02-typography-and-color/README.md)
@@ -63,9 +77,14 @@ Activities: [01 Style a Model 3 card](css/activities/01-style-a-model-card/READM
 09. [Combining Utilities Into Sections](tailwindcss/lessons/09-combining-utilities-into-sections/README.md)
 10. [Tesla Page Styling](tailwindcss/lessons/10-tesla-page-styling/README.md)
 
-Activities: [01 Style a hero with Tailwind](tailwindcss/activities/01-style-a-hero/README.md) · [02 Style Tesla sections with Tailwind](tailwindcss/activities/02-style-tesla-sections/README.md)
+#### Activities
 
-## JS
+01. [Style a hero with Tailwind](tailwindcss/activities/01-style-a-hero/README.md)
+02. [Style Tesla sections with Tailwind](tailwindcss/activities/02-style-tesla-sections/README.md)
+
+### JavaScript
+
+#### Lessons
 
 01. [Values And Data Types](js/lessons/01-values-and-data-types/README.md)
 02. [Variables And Operators](js/lessons/02-variables-and-operators/README.md)
@@ -78,7 +97,10 @@ Activities: [01 Style a hero with Tailwind](tailwindcss/activities/01-style-a-he
 09. [Es6 And Functional Array Methods](js/lessons/09-es6-and-functional-array-methods/README.md)
 10. [Local Storage](js/lessons/10-local-storage/README.md)
 
-Activities: [01 Build a model data summary](js/activities/01-model-data-summary/README.md) · [02 Build an interactive model picker](js/activities/02-interactive-model-picker/README.md)
+#### Activities
+
+01. [Build a model data summary](js/activities/01-model-data-summary/README.md)
+02. [Build an interactive model picker](js/activities/02-interactive-model-picker/README.md)
 
 ## Final Project
 
