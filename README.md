@@ -4,6 +4,8 @@ A beginner path to the [Tesla practice page](../tesla-web-poc/README.md). Work t
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
+The HTML lessons and activities are intentionally unstyled. Students learn CSS in the next subject.
+
 ## Formatting for maintainers
 
 Open this folder in VS Code and install the recommended Prettier extension to format HTML, CSS, and JavaScript when saving. For the whole curriculum, install the formatter with `npm install`, then run `npm run format`. Use `npm run format:check` to check formatting without changing files. Students can open the lesson and activity pages without installing npm packages.
@@ -40,18 +42,18 @@ Activities: [01 Style a Model 3 card](css/activities/01-style-a-model-card/READM
 
 ## TAILWIND
 
-01. [Utility Classes](tailwind/lessons/01-utility-classes/README.md)
-02. [Typography And Color](tailwind/lessons/02-typography-and-color/README.md)
-03. [Spacing And Sizing](tailwind/lessons/03-spacing-and-sizing/README.md)
-04. [Flex Utilities](tailwind/lessons/04-flex-utilities/README.md)
-05. [Grid Utilities](tailwind/lessons/05-grid-utilities/README.md)
-06. [Backgrounds And Borders](tailwind/lessons/06-backgrounds-and-borders/README.md)
-07. [Hover And Focus States](tailwind/lessons/07-hover-and-focus-states/README.md)
-08. [Responsive Prefixes](tailwind/lessons/08-responsive-prefixes/README.md)
-09. [Combining Utilities Into Sections](tailwind/lessons/09-combining-utilities-into-sections/README.md)
-10. [Tesla Page Styling](tailwind/lessons/10-tesla-page-styling/README.md)
+01. [Utility Classes](tailwindcss/lessons/01-utility-classes/README.md)
+02. [Typography And Color](tailwindcss/lessons/02-typography-and-color/README.md)
+03. [Spacing And Sizing](tailwindcss/lessons/03-spacing-and-sizing/README.md)
+04. [Flex Utilities](tailwindcss/lessons/04-flex-utilities/README.md)
+05. [Grid Utilities](tailwindcss/lessons/05-grid-utilities/README.md)
+06. [Backgrounds And Borders](tailwindcss/lessons/06-backgrounds-and-borders/README.md)
+07. [Hover And Focus States](tailwindcss/lessons/07-hover-and-focus-states/README.md)
+08. [Responsive Prefixes](tailwindcss/lessons/08-responsive-prefixes/README.md)
+09. [Combining Utilities Into Sections](tailwindcss/lessons/09-combining-utilities-into-sections/README.md)
+10. [Tesla Page Styling](tailwindcss/lessons/10-tesla-page-styling/README.md)
 
-Activities: [01 Style a hero with Tailwind](tailwind/activities/01-style-a-hero/README.md) · [02 Style Tesla sections with Tailwind](tailwind/activities/02-style-tesla-sections/README.md)
+Activities: [01 Style a hero with Tailwind](tailwindcss/activities/01-style-a-hero/README.md) · [02 Style Tesla sections with Tailwind](tailwindcss/activities/02-style-tesla-sections/README.md)
 
 ## JS
 
