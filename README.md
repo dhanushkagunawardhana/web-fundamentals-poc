@@ -4,6 +4,8 @@ Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons a
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
+Keep a syntax guide open while working: [HTML](cheatsheet/html/index.html), [CSS](cheatsheet/css/index.html), [Tailwind CSS](cheatsheet/tailwindcss/index.html), or [JavaScript](cheatsheet/js/index.html). All four guides share one stylesheet and work as static pages.
+
 The HTML lessons and activities are intentionally unstyled. Students learn CSS in the next subject.
 
 ## Publish with GitHub Pages

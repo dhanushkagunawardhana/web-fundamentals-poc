@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Cheatsheet · Web Fundamentals</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="../../index.html">← Curriculum home</a>
+        <h1>CSS cheatsheet</h1>
+        <nav class="subject-nav" aria-label="Other cheatsheets">
+          <a href="../html/index.html">HTML</a>
+          <a href="../tailwindcss/index.html">Tailwind CSS</a>
+          <a href="../js/index.html">JavaScript</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <p class="intro">
+        Use these CSS patterns to style HTML. CSS can live on an element, in a
+        page's <code>&lt;style&gt;</code> block, or in a separate stylesheet.
+      </p>
+      <nav class="toc" aria-label="On this page">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#basics">Where CSS goes</a></li>
+          <li><a href="#typography">Colors and typography</a></li>
+          <li><a href="#box-model">Box model</a></li>
+          <li><a href="#sizing">Sizing and spacing</a></li>
+          <li><a href="#flexbox">Flexbox</a></li>
+          <li><a href="#positioning">Positioning</a></li>
+          <li><a href="#grid-basics">Grid basics</a></li>
+          <li><a href="#grid-sections">Grid page sections</a></li>
+          <li><a href="#responsive">Flexible grids</a></li>
+          <li><a href="#media-queries">Media queries</a></li>
+        </ul>
+      </nav>
+      <section class="reference" aria-labelledby="quick-reference-title">
+        <h2 id="quick-reference-title">Quick syntax reference</h2>
+        <p>
+          Write a selector, then declarations inside braces. Change one value at
+          a time and refresh the page.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Syntax</th>
+                <th scope="col">What it does</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>style="..."</code></td>
+                <td>Styles one HTML element.</td>
+                <td><code>style="color: blue"</code></td>
+              </tr>
+              <tr>
+                <td><code>.class { ... }</code></td>
+                <td>Styles elements with that class.</td>
+                <td><code>.card { padding: 24px; }</code></td>
+              </tr>
+              <tr>
+                <td><code>color</code></td>
+                <td>Sets text color.</td>
+                <td><code>color: #171a20;</code></td>
+              </tr>
+              <tr>
+                <td><code>background-color</code></td>
+                <td>Sets background color.</td>
+                <td><code>background-color: #f4f4f4;</code></td>
+              </tr>
+              <tr>
+                <td><code>font-family</code></td>
+                <td>Chooses the typeface.</td>
+                <td><code>font-family: Arial, sans-serif;</code></td>
+              </tr>
+              <tr>
+                <td><code>font-size</code>, <code>font-weight</code></td>
+                <td>Set text size and boldness.</td>
+                <td><code>font-size: 24px;</code></td>
+              </tr>
+              <tr>
+                <td><code>line-height</code>, <code>letter-spacing</code></td>
+                <td>Space lines and letters.</td>
+                <td><code>line-height: 30px;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>text-align</code>, <code>text-transform</code>,
+                  <code>font-style</code>
+                </td>
+                <td>Align, change letter case, or italicize text.</td>
+                <td><code>text-align: center;</code></td>
+              </tr>
+              <tr>
+                <td><code>padding</code>, <code>margin</code></td>
+                <td>Add space inside or outside the border.</td>
+                <td><code>padding: 16px;</code></td>
+              </tr>
+              <tr>
+                <td><code>border</code>, <code>border-radius</code></td>
+                <td>Add and round a border.</td>
+                <td><code>border: 1px solid #ddd;</code></td>
+              </tr>
+              <tr>
+                <td><code>width</code>, <code>max-width</code></td>
+                <td>Set a flexible width and its limit.</td>
+                <td><code>width: 90%; max-width: 400px;</code></td>
+              </tr>
+              <tr>
+                <td><code>display: flex</code></td>
+                <td>Places items along one axis.</td>
+                <td><code>display: flex;</code></td>
+              </tr>
+              <tr>
+                <td><code>justify-content</code>, <code>align-items</code></td>
+                <td>Align flex or grid items along their axes.</td>
+                <td><code>justify-content: space-between;</code></td>
+              </tr>
+              <tr>
+                <td><code>gap</code></td>
+                <td>Adds space between flex or grid items.</td>
+                <td><code>gap: 16px;</code></td>
+              </tr>
+              <tr>
+                <td><code>position: relative</code></td>
+                <td>
+                  Moves an element while keeping its normal space; also anchors
+                  absolute children.
+                </td>
+                <td><code>position: relative; top: 20px;</code></td>
+              </tr>
+              <tr>
+                <td><code>position: absolute</code></td>
+                <td>Places an element relative to a positioned ancestor.</td>
+                <td><code>position: absolute; right: 8px;</code></td>
+              </tr>
+              <tr>
+                <td><code>display: grid</code></td>
+                <td>Creates rows and columns.</td>
+                <td><code>display: grid;</code></td>
+              </tr>
+              <tr>
+                <td><code>grid-template-columns</code></td>
+                <td>Defines grid column widths.</td>
+                <td><code>grid-template-columns: 2fr 1fr;</code></td>
+              </tr>
+              <tr>
+                <td><code>repeat(auto-fit, minmax(...))</code></td>
+                <td>Fits as many flexible columns as space permits.</td>
+                <td><code>repeat(auto-fit, minmax(180px, 1fr))</code></td>
+              </tr>
+              <tr>
+                <td><code>@media (min-width: ...)</code></td>
+                <td>Applies rules at or above a viewport width.</td>
+                <td><code>@media (min-width: 700px) { ... }</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="topic" id="basics">
+        <h2>Where CSS goes</h2>
+        <p>
+          A declaration has a property and value. Inline styles affect one
+          element; a class rule can style many elements. A linked file keeps CSS
+          separate from HTML.
+        </p>
+        <pre><code>&lt;p style="color: blue;"&gt;Inline style&lt;/p&gt;
+
+&lt;style&gt;
+  .note { color: blue; }
+&lt;/style&gt;
+&lt;p class="note"&gt;Class rule&lt;/p&gt;
+
+&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+      </section>
+      <section class="topic" id="typography">
+        <h2>Colors and typography</h2>
+        <p>
+          <code>color</code> sets text color; <code>background-color</code> sets
+          the background. Size, weight, line height, spacing, case, and style
+          shape the text.
+        </p>
+        <pre><code>.heading {
+  color: #171a20;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: italic;
+}</code></pre>
+      </section>
+      <section class="topic" id="box-model">
+        <h2>Box model</h2>
+        <p>
+          Content sits inside padding, border, and margin. Padding is inside the
+          border; margin is outside it.
+        </p>
+        <pre><code>.card {
+  padding: 24px;
+  border: 4px solid #3b82f6;
+  margin: 32px;
+}</code></pre>
+      </section>
+      <section class="topic" id="sizing">
+        <h2>Sizing and spacing</h2>
+        <p>
+          A percentage width changes with the parent.
+          <code>max-width</code> limits growth. Auto side margins center a block
+          with a limited width.
+        </p>
+        <pre><code>.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 32px auto;
+  padding: 24px;
+}</code></pre>
+      </section>
+      <section class="topic" id="flexbox">
+        <h2>Flexbox</h2>
+        <p>
+          Flexbox places items along one main axis.
+          <code>justify-content</code> controls that axis;
+          <code>align-items</code> controls the other axis.
+        </p>
+        <pre><code>.specs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}</code></pre>
+      </section>
+      <section class="topic" id="positioning">
+        <h2>Relative and absolute positioning</h2>
+        <p>
+          A relative element moves from its normal place but keeps that space.
+          An absolute element is placed against its nearest positioned ancestor
+          and leaves normal flow.
+        </p>
+        <pre><code>.model-card { position: relative; }
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.shifted { position: relative; top: 20px; }</code></pre>
+      </section>
+      <section class="topic" id="grid-basics">
+        <h2>Grid basics</h2>
+        <p>
+          Grid creates rows and columns. <code>1fr</code> is one share of
+          available space; items make new rows as needed.
+        </p>
+        <pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}</code></pre>
+      </section>
+      <section class="topic" id="grid-sections">
+        <h2>Grid page sections</h2>
+        <p>
+          Use unequal fractions for a wider visual column and a narrower text
+          column. Reuse the same class for repeated sections.
+        </p>
+        <pre><code>.feature {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: center;
+}</code></pre>
+      </section>
+      <section class="topic" id="responsive">
+        <h2>Flexible grids</h2>
+        <p>
+          <code>auto-fit</code> fits as many columns as will fit.
+          <code>minmax</code> gives each one a minimum width and lets it grow.
+        </p>
+        <pre><code>.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}</code></pre>
+      </section>
+      <section class="topic" id="media-queries">
+        <h2>Media queries</h2>
+        <p>
+          Start with one column. At a viewport width of 700px or more, use two
+          columns.
+        </p>
+        <pre><code>.models { display: grid; grid-template-columns: 1fr; }
+@media (min-width: 700px) {
+  .models { grid-template-columns: 1fr 1fr; }
+}</code></pre>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap"><a href="../../index.html">Curriculum home</a></div>
+    </footer>
+  </body>
+</html>

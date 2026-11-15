@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Cheatsheet · Web Fundamentals</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="../../index.html">← Curriculum home</a>
+        <h1>HTML cheatsheet</h1>
+        <nav class="subject-nav" aria-label="Other cheatsheets">
+          <a href="../css/index.html">CSS</a>
+          <a href="../tailwindcss/index.html">Tailwind CSS</a>
+          <a href="../js/index.html">JavaScript</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <p class="intro">
+        Use these patterns to build the page structure before adding styles or
+        JavaScript.
+      </p>
+      <nav class="toc" aria-label="On this page">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#skeleton">Page skeleton</a></li>
+          <li><a href="#text">Text and headings</a></li>
+          <li><a href="#links">Links and navigation</a></li>
+          <li><a href="#images">Images and alt text</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#landmarks">Semantic landmarks</a></li>
+          <li><a href="#sections">Sections and articles</a></li>
+          <li><a href="#forms">Buttons and forms</a></li>
+          <li><a href="#accessibility">Accessible structure</a></li>
+          <li><a href="#outline">Tesla page outline</a></li>
+        </ul>
+      </nav>
+      <section class="reference" aria-labelledby="quick-reference-title">
+        <h2 id="quick-reference-title">Quick syntax reference</h2>
+        <p>
+          Use the examples below as patterns. Replace the sample text and paths
+          with your own.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Syntax</th>
+                <th scope="col">What it does</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;!doctype html&gt;</code></td>
+                <td>Declares an HTML document.</td>
+                <td><code>&lt;!doctype html&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;html lang="en"&gt;</code></td>
+                <td>Wraps the page and declares its language.</td>
+                <td><code>&lt;html lang="en"&gt;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;head&gt;</code>, <code>&lt;meta&gt;</code>,
+                  <code>&lt;title&gt;</code>
+                </td>
+                <td>Holds page metadata and the browser tab title.</td>
+                <td><code>&lt;title&gt;Model 3&lt;/title&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;body&gt;</code></td>
+                <td>Holds visible page content.</td>
+                <td><code>&lt;body&gt;Hello&lt;/body&gt;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>,
+                  <code>&lt;p&gt;</code>
+                </td>
+                <td>Structure headings and paragraphs.</td>
+                <td><code>&lt;h1&gt;Model 3&lt;/h1&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></td>
+                <td>Mark important or emphasized text.</td>
+                <td><code>&lt;strong&gt;Important&lt;/strong&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="..."&gt;</code></td>
+                <td>Links to a page or a matching section ID.</td>
+                <td><code>&lt;a href="#specs"&gt;Specs&lt;/a&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;img src="..." alt="..."&gt;</code></td>
+                <td>Shows an image with alternative text.</td>
+                <td><code>&lt;img src="car.jpg" alt="Red car" /&gt;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+                  <code>&lt;li&gt;</code>
+                </td>
+                <td>Make unordered or numbered lists.</td>
+                <td>
+                  <code>&lt;ul&gt;&lt;li&gt;Range&lt;/li&gt;&lt;/ul&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                  <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>
+                </td>
+                <td>Name major page regions.</td>
+                <td><code>&lt;main&gt;Content&lt;/main&gt;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>
+                </td>
+                <td>Group a topic or self-contained item.</td>
+                <td>
+                  <code
+                    >&lt;section&gt;&lt;h2&gt;Specs&lt;/h2&gt;&lt;/section&gt;</code
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;div&gt;</code>, <code>&lt;span&gt;</code></td>
+                <td>Group content when no semantic element fits.</td>
+                <td><code>&lt;span&gt;321 mi&lt;/span&gt;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;label for="..."&gt;</code>,
+                  <code>&lt;input id="..."&gt;</code>
+                </td>
+                <td>Give a form control a visible label.</td>
+                <td><code>&lt;label for="q"&gt;Search&lt;/label&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;button type="button"&gt;</code></td>
+                <td>Creates a button that does not submit a form.</td>
+                <td>
+                  <code>&lt;button type="button"&gt;Next&lt;/button&gt;</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>id</code>, <code>class</code>, <code>aria-label</code>
+                </td>
+                <td>
+                  Identify an element, group styling targets, or supply an
+                  accessible name.
+                </td>
+                <td><code>&lt;nav aria-label="Main"&gt;</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="topic" id="skeleton">
+        <h2>Page skeleton</h2>
+        <p>
+          The doctype starts an HTML document. Metadata belongs in
+          <code>&lt;head&gt;</code>; visible content belongs in
+          <code>&lt;body&gt;</code>.
+        </p>
+        <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;title&gt;Model 3&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;Hello!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section class="topic" id="text">
+        <h2>Text and headings</h2>
+        <p>
+          Use one main <code>h1</code>, then <code>h2</code> for major sections.
+          Paragraphs hold ordinary text.
+        </p>
+        <pre><code>&lt;h1&gt;Model 3&lt;/h1&gt;
+&lt;h2&gt;Range&lt;/h2&gt;
+&lt;p&gt;Drive up to 321 miles.&lt;/p&gt;</code></pre>
+      </section>
+      <section class="topic" id="links">
+        <h2>Links and navigation</h2>
+        <p>
+          A fragment link points to an element with the matching
+          <code>id</code>.
+        </p>
+        <pre><code>&lt;nav aria-label="Page sections"&gt;
+  &lt;a href="#specs"&gt;Specs&lt;/a&gt;
+&lt;/nav&gt;
+&lt;section id="specs"&gt;&lt;h2&gt;Specs&lt;/h2&gt;&lt;/section&gt;</code></pre>
+      </section>
+      <section class="topic" id="images">
+        <h2>Images and alt text</h2>
+        <p>
+          <code>src</code> is the image path. <code>alt</code> describes
+          meaningful content for people who cannot see the image.
+        </p>
+        <pre><code>&lt;img src="car.jpg" alt="Silver Model 3 parked beside a road" /&gt;</code></pre>
+      </section>
+      <section class="topic" id="lists">
+        <h2>Lists</h2>
+        <p>
+          Use <code>ul</code> when order does not matter and <code>ol</code> for
+          steps or rankings. Each item is an <code>li</code>.
+        </p>
+        <pre><code>&lt;ul&gt;&lt;li&gt;Range&lt;/li&gt;&lt;li&gt;Safety&lt;/li&gt;&lt;/ul&gt;
+&lt;ol&gt;&lt;li&gt;Choose a model&lt;/li&gt;&lt;li&gt;Order&lt;/li&gt;&lt;/ol&gt;</code></pre>
+      </section>
+      <section class="topic" id="landmarks">
+        <h2>Semantic landmarks</h2>
+        <p>
+          Landmarks describe the page's major regions. A page normally has one
+          <code>main</code>.
+        </p>
+        <pre><code>&lt;header&gt;&lt;nav aria-label="Main"&gt;...&lt;/nav&gt;&lt;/header&gt;
+&lt;main&gt;Page content&lt;/main&gt;
+&lt;footer&gt;Contact details&lt;/footer&gt;</code></pre>
+      </section>
+      <section class="topic" id="sections">
+        <h2>Sections and articles</h2>
+        <p>
+          A <code>section</code> groups a topic, usually with a heading. An
+          <code>article</code> can make sense on its own.
+        </p>
+        <pre><code>&lt;section aria-labelledby="features-title"&gt;
+  &lt;h2 id="features-title"&gt;Features&lt;/h2&gt;
+  &lt;article&gt;&lt;h3&gt;Charging&lt;/h3&gt;&lt;p&gt;Charge at home.&lt;/p&gt;&lt;/article&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+      <section class="topic" id="forms">
+        <h2>Buttons and forms</h2>
+        <p>
+          A button performs an action. Match a label's <code>for</code> to an
+          input's <code>id</code>.
+        </p>
+        <pre><code>&lt;form&gt;
+  &lt;label for="model"&gt;Choose a model&lt;/label&gt;
+  &lt;select id="model" name="model"&gt;
+    &lt;option&gt;Model 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;button type="submit"&gt;Continue&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      </section>
+      <section class="topic" id="accessibility">
+        <h2>Accessible structure</h2>
+        <p>
+          Keep headings in order, give controls visible labels, and write useful
+          image descriptions. Label each navigation region when there is more
+          than one.
+        </p>
+        <pre><code>&lt;h1&gt;Model 3&lt;/h1&gt;
+&lt;h2&gt;Interior&lt;/h2&gt;
+&lt;img src="interior.jpg" alt="Model 3 front seats and dashboard" /&gt;
+&lt;button type="button" aria-label="Next image"&gt;→&lt;/button&gt;</code></pre>
+      </section>
+      <section class="topic" id="outline">
+        <h2>Tesla page outline</h2>
+        <p>Assemble semantic regions before styling the final page.</p>
+        <pre><code>&lt;header&gt;&lt;nav aria-label="Main"&gt;...&lt;/nav&gt;&lt;/header&gt;
+&lt;main&gt;
+  &lt;section aria-labelledby="hero-title"&gt;
+    &lt;h1 id="hero-title"&gt;Model 3&lt;/h1&gt;
+  &lt;/section&gt;
+  &lt;section aria-labelledby="features-title"&gt;
+    &lt;h2 id="features-title"&gt;Features&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section aria-labelledby="specs-title"&gt;
+    &lt;h2 id="specs-title"&gt;Specs&lt;/h2&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap"><a href="../../index.html">Curriculum home</a></div>
+    </footer>
+  </body>
+</html>

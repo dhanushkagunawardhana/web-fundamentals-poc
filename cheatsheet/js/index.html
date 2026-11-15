@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Cheatsheet · Web Fundamentals</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="../../index.html">← Curriculum home</a>
+        <h1>JavaScript cheatsheet</h1>
+        <nav class="subject-nav" aria-label="Other cheatsheets">
+          <a href="../html/index.html">HTML</a>
+          <a href="../css/index.html">CSS</a>
+          <a href="../tailwindcss/index.html">Tailwind CSS</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <p class="intro">
+        Use these examples when adding behavior to a page. JavaScript can go in
+        an inline module or a separate <code>main.js</code> file.
+      </p>
+      <nav class="toc" aria-label="On this page">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#values">Values and types</a></li>
+          <li><a href="#variables">Variables and operators</a></li>
+          <li><a href="#conditions">Conditions</a></li>
+          <li><a href="#collections">Arrays and objects</a></li>
+          <li><a href="#functions">Functions</a></li>
+          <li><a href="#scope">Scope and closures</a></li>
+          <li><a href="#dom">DOM updates</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#modern">ES6+ and array methods</a></li>
+          <li><a href="#storage">Local storage</a></li>
+        </ul>
+      </nav>
+      <section class="reference" aria-labelledby="quick-reference-title">
+        <h2 id="quick-reference-title">Quick syntax reference</h2>
+        <p>
+          Use these small patterns in a script. The sections below show how they
+          work together.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Syntax</th>
+                <th scope="col">What it does</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>"text"</code>, <code>321</code>, <code>true</code>
+                </td>
+                <td>Represent a string, number, or boolean.</td>
+                <td><code>const ready = true;</code></td>
+              </tr>
+              <tr>
+                <td><code>typeof value</code></td>
+                <td>Checks a value's type.</td>
+                <td><code>typeof 321</code></td>
+              </tr>
+              <tr>
+                <td><code>const</code>, <code>let</code></td>
+                <td>Create a fixed or reassignable binding.</td>
+                <td><code>let count = 0;</code></td>
+              </tr>
+              <tr>
+                <td><code>+</code>, <code>+=</code></td>
+                <td>Add values or update a number.</td>
+                <td><code>count += 1;</code></td>
+              </tr>
+              <tr>
+                <td><code>===</code>, <code>&gt;=</code></td>
+                <td>Compare values or numbers.</td>
+                <td><code>range &gt;= 320</code></td>
+              </tr>
+              <tr>
+                <td><code>if (...) { ... } else { ... }</code></td>
+                <td>Choose between two actions.</td>
+                <td><code>if (ready) { start(); }</code></td>
+              </tr>
+              <tr>
+                <td><code>`...${value}...`</code></td>
+                <td>Insert a value into a string.</td>
+                <td><code>`Range: ${range}`</code></td>
+              </tr>
+              <tr>
+                <td><code>[...]</code>, <code>items[0]</code></td>
+                <td>Store ordered values and read the first.</td>
+                <td><code>const models = ["Model 3"];</code></td>
+              </tr>
+              <tr>
+                <td><code>{ key: value }</code>, <code>obj.key</code></td>
+                <td>Store and read named values.</td>
+                <td><code>car.range</code></td>
+              </tr>
+              <tr>
+                <td><code>function name(arg) { ... }</code></td>
+                <td>Define reusable steps.</td>
+                <td><code>function add(a, b) { return a + b; }</code></td>
+              </tr>
+              <tr>
+                <td><code>return value</code></td>
+                <td>Send a result back from a function.</td>
+                <td><code>return count;</code></td>
+              </tr>
+              <tr>
+                <td><code>() =&gt; { ... }</code></td>
+                <td>
+                  Write an arrow function, often for callbacks or closures.
+                </td>
+                <td><code>() =&gt; count + 1</code></td>
+              </tr>
+              <tr>
+                <td><code>document.querySelector(...)</code></td>
+                <td>Find one element in the page.</td>
+                <td><code>document.querySelector("#output")</code></td>
+              </tr>
+              <tr>
+                <td><code>element.textContent</code></td>
+                <td>Read or change an element's text.</td>
+                <td><code>output.textContent = "Ready";</code></td>
+              </tr>
+              <tr>
+                <td><code>element.setAttribute(...)</code></td>
+                <td>Change an HTML attribute.</td>
+                <td><code>image.setAttribute("alt", "Red car");</code></td>
+              </tr>
+              <tr>
+                <td><code>addEventListener(...)</code></td>
+                <td>Run code when an event occurs.</td>
+                <td><code>button.addEventListener("click", show);</code></td>
+              </tr>
+              <tr>
+                <td><code>const { name } = car</code></td>
+                <td>Read a property by destructuring.</td>
+                <td><code>const { range } = car;</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>map</code>, <code>filter</code>, <code>find</code>
+                </td>
+                <td>Transform, keep, or locate array items.</td>
+                <td><code>models.map((m) =&gt; m.name)</code></td>
+              </tr>
+              <tr>
+                <td><code>localStorage.getItem(key)</code></td>
+                <td>Read a saved string or get <code>null</code>.</td>
+                <td><code>localStorage.getItem("model")</code></td>
+              </tr>
+              <tr>
+                <td><code>localStorage.setItem(key, value)</code></td>
+                <td>Save a string across refreshes.</td>
+                <td><code>localStorage.setItem("model", "Model 3")</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="topic" id="values">
+        <h2>Values and data types</h2>
+        <p>
+          Strings hold text, numbers hold numeric values, and booleans are
+          <code>true</code> or <code>false</code>. An inline module in
+          <code>&lt;head&gt;</code> runs after the page is parsed.
+        </p>
+        <pre><code>&lt;script type="module"&gt;
+  const model = "Model 3"; // string
+  const range = 321;      // number
+  const available = true; // boolean
+  document.querySelector("#output").textContent = model;
+&lt;/script&gt;</code></pre>
+      </section>
+      <section class="topic" id="variables">
+        <h2>Variables and operators</h2>
+        <p>
+          <code>const</code> is a binding that cannot be reassigned;
+          <code>let</code> can be reassigned. Operators calculate values, and
+          template literals build strings.
+        </p>
+        <pre><code>const range = 321;
+let bonus = 25;
+const total = range + bonus;
+const message = `Estimated range: ${total} miles`;</code></pre>
+      </section>
+      <section class="topic" id="conditions">
+        <h2>Conditions</h2>
+        <p>
+          An <code>if</code> statement runs one branch when its condition is
+          true and another otherwise. <code>&gt;=</code> means greater than or
+          equal to.
+        </p>
+        <pre><code>const range = 321;
+let label;
+if (range &gt;= 320) {
+  label = "Long range";
+} else {
+  label = "Standard range";
+}</code></pre>
+      </section>
+      <section class="topic" id="collections">
+        <h2>Arrays and objects</h2>
+        <p>
+          An array holds items in order; use a zero based index to read one. An
+          object groups named properties.
+        </p>
+        <pre><code>const models = ["Model 3", "Performance"];
+const first = models[0];
+const car = { name: "Model 3", range: 321 };
+const name = car.name;</code></pre>
+      </section>
+      <section class="topic" id="functions">
+        <h2>Functions</h2>
+        <p>
+          A function accepts inputs called parameters and can return a result.
+          Call it with an argument.
+        </p>
+        <pre><code>function formatRange(miles) {
+  return `${miles} mi`;
+}
+const text = formatRange(321);</code></pre>
+      </section>
+      <section class="topic" id="scope">
+        <h2>Scope and closures</h2>
+        <p>
+          A variable declared inside a function stays in that function's scope.
+          A returned function can remember it; this is a closure. Load a
+          separate <code>main.js</code> with <code>defer</code> in
+          <code>&lt;head&gt;</code>. Put the JavaScript below in that file.
+        </p>
+        <pre><code>&lt;script src="main.js" defer&gt;&lt;/script&gt;
+
+function makeCounter() {
+  let count = 0;
+  return () =&gt; {
+    count += 1;
+    return count;
+  };
+}
+const next = makeCounter();
+next(); // 1</code></pre>
+      </section>
+      <section class="topic" id="dom">
+        <h2>DOM selection and updates</h2>
+        <p>
+          <code>querySelector</code> finds an element with a CSS selector.
+          Change <code>textContent</code> for text or use
+          <code>setAttribute</code> for an attribute.
+        </p>
+        <pre><code>const heading = document.querySelector("#title");
+heading.textContent = "Model 3 Performance";
+const image = document.querySelector("#car-image");
+image.setAttribute("alt", "Red Model 3");</code></pre>
+      </section>
+      <section class="topic" id="events">
+        <h2>Events</h2>
+        <p>
+          <code>addEventListener</code> runs a function when an event happens.
+          Use a button click to update the page or switch a tab.
+        </p>
+        <pre><code>const button = document.querySelector("#action");
+const output = document.querySelector("#output");
+button.addEventListener("click", () =&gt; {
+  output.textContent = "Performance selected";
+});</code></pre>
+      </section>
+      <section class="topic" id="modern">
+        <h2>ES6+ and functional array methods</h2>
+        <p>
+          Destructuring reads object properties. <code>filter</code> keeps
+          matching items, <code>map</code> transforms each item, and
+          <code>find</code> returns the first match.
+        </p>
+        <pre><code>const models = [{ name: "Model 3", range: 321 }];
+const { name, range } = models[0];
+const longRange = models.filter(({ range }) =&gt; range &gt; 300);
+const names = models.map(({ name }) =&gt; name);
+const chosen = models.find(({ name }) =&gt; name === "Model 3");</code></pre>
+      </section>
+      <section class="topic" id="storage">
+        <h2>Local storage</h2>
+        <p>
+          <code>localStorage</code> saves strings for the same site across
+          refreshes. Read with <code>getItem</code> and write with
+          <code>setItem</code>. A missing key returns <code>null</code>.
+        </p>
+        <pre><code>const saved = localStorage.getItem("preferredModel") || "Model 3";
+localStorage.setItem("preferredModel", "Performance");</code></pre>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap"><a href="../../index.html">Curriculum home</a></div>
+    </footer>
+  </body>
+</html>
