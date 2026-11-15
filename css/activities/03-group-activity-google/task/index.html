@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search page styling activity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <a class="header-link" href="#search">Search</a>
+    </header>
+    <main class="main" id="search">
+      <h1 class="logo" aria-label="Google">
+        <span class="logo-blue">G</span><span class="logo-red">o</span
+        ><span class="logo-yellow">o</span><span class="logo-blue">g</span
+        ><span class="logo-green">l</span><span class="logo-red">e</span>
+      </h1>
+      <form
+        class="search-form"
+        action="https://www.google.com/search"
+        method="get"
+      >
+        <label class="search-label" for="search-query">Search the web</label>
+        <input class="search-input" id="search-query" name="q" type="search" />
+        <div class="actions">
+          <button class="search-button" type="submit">Google Search</button>
+          <button class="search-button" type="reset">Clear</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

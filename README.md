@@ -1,6 +1,6 @@
 # Web Fundamentals
 
-Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
+Work through HTML, CSS, Tailwind, then JavaScript. Each subject has 10 lessons and two activities: one after lesson 5 and one after lesson 10. CSS also has an optional group activity. Open any lesson `index.html` or activity `task/index.html` directly in a browser. Tailwind examples need an internet connection for the CDN.
 
 For each lesson: read its README, open `index.html`, change one thing, and refresh. Then complete the activity after lesson 5 or 10. Give students the `task` folder; use the `solution` folder to explain one completed implementation. The Tesla project is a reference.
 
@@ -61,6 +61,7 @@ Open this folder in VS Code and install the recommended Prettier extension to fo
 
 01. [Style a Model 3 card](css/activities/01-style-a-model-card/README.md)
 02. [Build a responsive layout](css/activities/02-build-a-responsive-layout/README.md)
+03. [Group activity: fix a search page](css/activities/03-group-activity-google/README.md)
 
 ### Tailwind CSS
 

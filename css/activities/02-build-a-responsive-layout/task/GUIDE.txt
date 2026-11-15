@@ -1,0 +1,22 @@
+TASK 02: Build a responsive layout
+
+Description
+The Model 3 page has finished HTML but no CSS. Style its header, hero, feature section, and specs for wide and narrow screens.
+
+What to do
+- Edit only styles.css. Keep index.html and its class names unchanged.
+- Use the existing classes, including .site-header, .hero, .hero-badge, .feature-grid, .visual, and .specs.
+
+Expected result
+- A clear header and hero with the Electric badge in a corner of the hero.
+- A feature section with two columns on a wide screen and one column on a narrow screen.
+- Content that fits the window without horizontal scrolling.
+
+Steps
+1. Open index.html in a browser, then open styles.css in your editor.
+2. Style .page-body and .site-header for readable text and spacing.
+3. Give .hero a background and position: relative. Place .hero-badge with position: absolute.
+4. Make .feature-grid a grid with a flexible width and a gap. Style .visual and .specs.
+5. Add a media query that changes .feature-grid from one column to two at a wider window width.
+6. Resize the browser and check both layouts. Refresh after CSS changes.
+

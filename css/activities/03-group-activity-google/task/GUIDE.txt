@@ -1,0 +1,22 @@
+TASK 03: Fix a search page
+
+Description
+This search page has the right HTML, but its CSS values are deliberately scrambled. You can solve it alone or discuss each change with a group.
+
+What to do
+- Edit only styles.css. Keep index.html unchanged.
+- Keep the existing CSS selectors and properties in their current order. Change their values only.
+
+Expected result
+- A white page with a large, multicolored wordmark above a centered search field.
+- A rounded search field, small light buttons, and comfortable spacing.
+- A search area that fits both a wide window and a narrow phone-sized window.
+
+Steps
+1. Open index.html and identify what looks wrong. Open styles.css beside it.
+2. Fix .page, .header, and .main so the page background and overall alignment look right.
+3. Fix .logo and the four .logo-* color rules so the wordmark is large and multicolored.
+4. Fix .search-label, .search-input, and .search-input:focus for readable text and a rounded field.
+5. Fix .actions, .search-button, and .search-button:hover for tidy buttons below the field.
+6. Refresh after each group of changes, then resize the browser to check the narrow layout.
+

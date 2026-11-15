@@ -1,0 +1,22 @@
+TASK 01: Style a Model 3 card
+
+Description
+The page already has all its HTML. Add CSS to turn the plain content into a neat Model 3 card.
+
+What to do
+- Edit only the <style> block in index.html. Keep the HTML content and class names as they are.
+- Use class selectors such as .page-body, .page, .row, .card, .card-title, and .note.
+
+Expected result
+- A readable page with a centered content area and a card that stands out from the background.
+- The header and the range/seats details sit in horizontal rows.
+- Text sizes, colors, padding, borders, and spacing make the information easy to scan.
+
+Steps
+1. Open index.html in a browser and look at the unstyled page.
+2. Add a rule for .page-body to set the font, text color, and page background.
+3. Style .page and .card with width, margin, padding, background, and border.
+4. Use display: flex on .row to place its children side by side.
+5. Style .card-title, .note, and .nav-link. Refresh after each change.
+6. Check that the link still jumps to the card and that the text is readable.
+
