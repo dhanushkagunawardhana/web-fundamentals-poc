@@ -1,4 +1,4 @@
-body {
+.page-body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -11,7 +11,7 @@ body {
   gap: 16px;
   padding: 16px 24px;
 }
-.site-header a {
+.nav-link {
   color: inherit;
   margin-left: 12px;
 }
@@ -21,15 +21,14 @@ body {
   background: #475569;
   color: white;
 }
-.hero::before {
-  content: "";
+.hero-badge {
   position: absolute;
-  inset: 0;
-  background: #0006;
+  top: 16px;
+  right: 24px;
+  padding: 8px 12px;
+  background: #171a20;
 }
 .hero-content {
-  position: relative;
-  z-index: 1;
   padding: 96px 24px;
   text-align: center;
 }
@@ -37,7 +36,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  width: min(90%, 960px);
+  width: 90%;
+  max-width: 960px;
   margin: 48px auto;
   align-items: center;
 }

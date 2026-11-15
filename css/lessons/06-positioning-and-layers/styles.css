@@ -1,31 +1,32 @@
 body {
-  font-size: 16px;
-  line-height: 24px;
   font-family: Arial, sans-serif;
   color: #171a20;
   margin: 32px;
 }
-button,
-a {
-  cursor: pointer;
+section {
+  margin-bottom: 48px;
 }
-.card {
-  background: #f4f4f4;
+.relative-example span {
+  display: inline-block;
   padding: 16px;
+  background: #e5e7eb;
 }
-.hero {
+.relative-example .relative-box {
   position: relative;
-  min-height: 256px;
-  background: #555;
-  color: white;
+  top: 20px;
+  background: #93c5fd;
 }
-.hero::before {
-  content: "";
+.model-card {
+  position: relative;
+  width: 240px;
+  padding: 48px 24px 24px;
+  background: #f4f4f4;
+}
+.badge {
   position: absolute;
-  inset: 0;
-  background: #0007;
-}
-.hero > * {
-  position: relative;
-  z-index: 1;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background: #171a20;
+  color: white;
 }

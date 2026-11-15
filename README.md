@@ -46,7 +46,7 @@ Open this folder in VS Code and install the recommended Prettier extension to fo
 
 #### Lessons
 
-01. [Selectors And Rules](css/lessons/01-selectors-and-rules/README.md)
+01. [CSS Basics](css/lessons/01-css-basics/README.md)
 02. [Colors And Typography](css/lessons/02-colors-and-typography/README.md)
 03. [Box Model](css/lessons/03-box-model/README.md)
 04. [Sizing And Spacing](css/lessons/04-sizing-and-spacing/README.md)

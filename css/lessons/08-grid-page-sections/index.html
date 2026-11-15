@@ -3,26 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>08-grid-page-sections</title>
+    <title>08 Grid Page Sections</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="row">
-      <strong>TESLA</strong>
-      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
-    </header>
     <main>
-      <section class="hero card">
-        <h1>Model 3</h1>
-        <p class="note">Electric sedan</p>
+      <h1>Grid page sections</h1>
+      <section class="feature">
+        <div class="visual">Vehicle image area</div>
+        <div class="copy">
+          <h2>Model 3</h2>
+          <p>Built for everyday driving.</p>
+        </div>
       </section>
-      <section id="feature" class="grid card">
-        <div>Feature image</div>
-        <div>Feature copy</div>
-      </section>
-      <section id="specs" class="grid">
-        <div class="card">321 mi range</div>
-        <div class="card">5 seats</div>
+      <section class="feature">
+        <div class="visual">Charging image area</div>
+        <div class="copy">
+          <h2>Charging</h2>
+          <p>Recharge at home or on the road.</p>
+        </div>
       </section>
     </main>
   </body>

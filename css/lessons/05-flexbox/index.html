@@ -3,49 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>05-flexbox</title>
+    <title>05 Flexbox</title>
     <style>
       body {
-        font-size: 16px;
-        line-height: 24px;
         font-family: Arial, sans-serif;
-        color: #171a20;
         margin: 32px;
       }
-      button,
-      a {
-        cursor: pointer;
-      }
-      .card {
-        background: #f4f4f4;
-        padding: 16px;
-      }
-      .row {
+      .specs {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         gap: 16px;
+        min-height: 160px;
+        padding: 16px;
+        background: #f4f4f4;
+      }
+      .spec {
+        padding: 16px;
+        background: #cfe4ff;
       }
     </style>
   </head>
   <body>
-    <header class="row">
-      <strong>TESLA</strong>
-      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
-    </header>
     <main>
-      <section class="hero card">
-        <h1>Model 3</h1>
-        <p class="note">Electric sedan</p>
-      </section>
-      <section id="feature" class="grid card">
-        <div>Feature image</div>
-        <div>Feature copy</div>
-      </section>
-      <section id="specs" class="grid">
-        <div class="card">321 mi range</div>
-        <div class="card">5 seats</div>
-      </section>
+      <h1>Flexbox</h1>
+      <div class="specs">
+        <div class="spec">321 mi range</div>
+        <div class="spec">5 seats</div>
+        <div class="spec">Electric</div>
+      </div>
     </main>
   </body>
 </html>

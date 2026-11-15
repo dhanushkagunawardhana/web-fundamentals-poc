@@ -1,9 +1,9 @@
 # Lesson 03: Box Model
 
-**Learn:** Content, padding, border, and margin form an element's box.
+**Learn:** The text is the content. `padding` adds space inside the blue border; `margin` adds space outside it.
 
 1. Open [the example](index.html) in a browser.
-2. Find the code that demonstrates this idea; change one value and refresh.
+2. Change the card's `padding`, `border` width, and `margin` one at a time, then refresh.
 3. After lesson 05, complete activity [01 Style a Model 3 card](../../activities/01-style-a-model-card/README.md).
 
 **Tesla connection:** Use this idea in the [final project](../../../index.html#final-project), which combines page structure, styles, Tailwind classes, and JavaScript controls.

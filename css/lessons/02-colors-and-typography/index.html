@@ -3,54 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>02-colors-and-typography</title>
+    <title>02 Colors and Typography</title>
     <style>
       body {
-        font-size: 16px;
-        line-height: 24px;
         font-family: Arial, sans-serif;
-        color: #171a20;
         margin: 32px;
       }
-      button,
-      a {
-        cursor: pointer;
-      }
-      .card {
-        background: #f4f4f4;
-        padding: 16px;
-      }
-      body {
-        color: #171a20;
-        font-family: Arial, sans-serif;
-      }
       h1 {
-        font-size: 48px;
+        color: #171a20;
+        font-size: 40px;
+        font-weight: 700;
       }
-      p {
-        line-height: 26px;
-        color: #555;
+      .intro {
+        color: #555555;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .label {
+        color: #2563eb;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .price {
+        color: #047857;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .note {
+        color: #6b7280;
+        font-size: 14px;
+        font-style: italic;
+      }
+      .highlight {
+        color: #ffffff;
+        background-color: #171a20;
+        padding: 12px;
       }
     </style>
   </head>
   <body>
-    <header class="row">
-      <strong>TESLA</strong>
-      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
-    </header>
     <main>
-      <section class="hero card">
-        <h1>Model 3</h1>
-        <p class="note">Electric sedan</p>
-      </section>
-      <section id="feature" class="grid card">
-        <div>Feature image</div>
-        <div>Feature copy</div>
-      </section>
-      <section id="specs" class="grid">
-        <div class="card">321 mi range</div>
-        <div class="card">5 seats</div>
-      </section>
+      <h1>Model 3</h1>
+      <p class="intro">
+        An electric sedan with room for five people and a quiet, comfortable
+        ride.
+      </p>
+      <p class="label">Electric vehicle</p>
+      <p class="price">321 miles of range</p>
+      <p class="note">Range varies with driving conditions.</p>
+      <p class="highlight">White text on a dark background</p>
     </main>
   </body>
 </html>

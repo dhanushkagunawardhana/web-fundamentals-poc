@@ -6,15 +6,33 @@
     <title>Build a responsive layout</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-body">
+    <header class="site-header">
+      <strong>TESLA</strong>
+      <nav>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#specs">Specs</a>
+      </nav>
+    </header>
     <main>
-      <h1>Model 3</h1>
-      <p class="note">Electric sedan</p>
-      <div class="card">Feature card</div>
-      <div class="grid">
-        <div>Range</div>
-        <div>Seats</div>
-      </div>
+      <section class="hero">
+        <span class="hero-badge">Electric</span>
+        <div class="hero-content">
+          <h1>Model 3</h1>
+          <p>Electric sedan</p>
+        </div>
+      </section>
+      <section id="features" class="feature-grid">
+        <div class="visual">Model 3 image area</div>
+        <div>
+          <h2>Everyday comfort</h2>
+          <p>A clear, responsive feature panel.</p>
+        </div>
+      </section>
+      <section id="specs" class="specs">
+        <h2>Specs</h2>
+        <p>321 mi range · 5 seats</p>
+      </section>
     </main>
   </body>
 </html>

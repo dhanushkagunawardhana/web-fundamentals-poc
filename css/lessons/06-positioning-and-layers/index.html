@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>06-positioning-and-layers</title>
+    <title>06 Positioning and Layers</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="row">
-      <strong>TESLA</strong>
-      <nav><a href="#feature">Features</a> · <a href="#specs">Specs</a></nav>
-    </header>
     <main>
-      <section class="hero card">
-        <h1>Model 3</h1>
-        <p class="note">Electric sedan</p>
+      <h1>Positioning and layers</h1>
+      <section>
+        <h2>Relative positioning</h2>
+        <div class="relative-example">
+          <span class="relative-box">Moved 20px down</span>
+          <span>Next box stays in place</span>
+        </div>
       </section>
-      <section id="feature" class="grid card">
-        <div>Feature image</div>
-        <div>Feature copy</div>
-      </section>
-      <section id="specs" class="grid">
-        <div class="card">321 mi range</div>
-        <div class="card">5 seats</div>
+      <section>
+        <h2>Absolute positioning</h2>
+        <div class="model-card">
+          <span class="badge">New</span>
+          <h3>Model 3</h3>
+          <p>Electric sedan</p>
+        </div>
       </section>
     </main>
   </body>

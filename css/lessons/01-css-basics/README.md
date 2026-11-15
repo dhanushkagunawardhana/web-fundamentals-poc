@@ -1,9 +1,9 @@
-# Lesson 01: Selectors And Rules
+# Lesson 01: CSS Basics
 
-**Learn:** Start with `style` attributes on elements; later lessons move shared rules into CSS selectors. Notice that the card styles must be repeated here.
+**Learn:** The `style` attribute adds CSS to one HTML element. In the example, `color` changes the text color and `font-size` changes its size. The next lesson introduces CSS rules in a `<style>` block.
 
 1. Open [the example](index.html) in a browser.
-2. Find the code that demonstrates this idea; change one value and refresh.
+2. Change `blue` to another color and `24px` to another size, then refresh.
 3. After lesson 05, complete activity [01 Style a Model 3 card](../../activities/01-style-a-model-card/README.md).
 
 **Tesla connection:** Use this idea in the [final project](../../../index.html#final-project), which combines page structure, styles, Tailwind classes, and JavaScript controls.
