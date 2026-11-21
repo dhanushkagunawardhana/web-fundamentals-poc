@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>06-backgrounds-and-borders</title>
+    <title>Backgrounds and Borders with Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <section class="rounded-lg border border-slate-200 bg-slate-50 p-6">
-      <h1 class="text-2xl">Feature</h1>
-    </section>
+  <body class="p-6">
+    <main class="mx-auto max-w-xl">
+      <section class="rounded-lg border border-slate-300 bg-white p-6">
+        <h2 class="text-lg font-semibold">A simple feature card</h2>
+        <p class="mt-2 text-slate-600">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, libero!
+        </p>
+        <span class="mt-4 inline-block rounded border-2 border-blue-600 bg-blue-50 px-3 py-1 text-blue-800">
+          Colored background and thicker border
+        </span>
+      </section>
+    </main>
   </body>
 </html>

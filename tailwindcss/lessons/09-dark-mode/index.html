@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dark Mode with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <input id="theme-toggle" type="checkbox" class="peer sr-only" />
+    <label
+      for="theme-toggle"
+      class="fixed right-6 top-6 cursor-pointer rounded-lg bg-slate-900 px-4 py-2 text-white peer-checked:bg-white peer-checked:text-slate-900"
+    >
+      Toggle Theme
+    </label>
+    <main
+      class="min-h-screen bg-white p-6 pt-20 text-slate-900 transition-colors peer-checked:bg-slate-900 peer-checked:text-white"
+    >
+      <h1 class="text-xl font-bold">Light and dark themes</h1>
+    </main>
+  </body>
+</html>

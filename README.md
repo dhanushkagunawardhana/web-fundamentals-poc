@@ -76,9 +76,9 @@ Open this folder in VS Code and install the recommended Prettier extension to fo
 05. [Grid Utilities](tailwindcss/lessons/05-grid-utilities/README.md)
 06. [Backgrounds And Borders](tailwindcss/lessons/06-backgrounds-and-borders/README.md)
 07. [Hover And Focus States](tailwindcss/lessons/07-hover-and-focus-states/README.md)
-08. [Responsive Prefixes](tailwindcss/lessons/08-responsive-prefixes/README.md)
-09. [Combining Utilities Into Sections](tailwindcss/lessons/09-combining-utilities-into-sections/README.md)
-10. [Tesla Page Styling](tailwindcss/lessons/10-tesla-page-styling/README.md)
+08. [Group And Peer Variants](tailwindcss/lessons/08-group-and-peer-variants/README.md)
+09. [Dark Mode](tailwindcss/lessons/09-dark-mode/README.md)
+10. [Custom Theme Colors](tailwindcss/lessons/10-custom-theme-colors/README.md)
 
 #### Activities
 

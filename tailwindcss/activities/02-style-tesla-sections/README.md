@@ -1,6 +1,6 @@
 # Activity 02: Style Tesla sections with Tailwind
 
-**Use lessons 06–10.** Use grid, backgrounds, borders, interaction states, and responsive prefixes to style feature and specs sections.
+**Practice:** Style feature and specs sections with backgrounds, borders, hover/focus and group states, and custom theme colors.
 
 1. Give students the [task folder](task/) and open [its starter page](task/index.html) in a browser.
 2. Edit the TODO and refresh to check the work.

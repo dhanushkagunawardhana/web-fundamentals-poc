@@ -3,18 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Style Tesla sections with Tailwind</title>
+    <title>Style Tesla Sections with Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                100: "#dbeafe",
+                200: "#bfdbfe",
+              },
+              secondary: {
+                100: "#f3e8ff",
+                200: "#e9d5ff",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <!-- TODO: Use grid, backgrounds, borders, interaction states, and responsive prefixes to style feature and specs sections. -->
+    <header>
+      <strong>TESLA</strong>
+      <a href="#specs">Specs</a>
+    </header>
+
     <main>
-      <h1>Model 3</h1>
-      <p>Electric sedan</p>
-      <button type="button">Explore</button>
-      <section>
-        <div>Image</div>
-        <div>Feature copy</div>
+      <section id="features">
+        <a href="#specs">
+          <span>Model 3</span>
+          <h1>Ready for the road</h1>
+          <p>An electric sedan for everyday drives.</p>
+        </a>
+      </section>
+
+      <section id="specs">
+        <h2>Quick specs</h2>
+        <div>
+          <article>
+            <h3>Range</h3>
+            <p>321 mi</p>
+          </article>
+          <article>
+            <h3>Seating</h3>
+            <p>5 adults</p>
+          </article>
+        </div>
       </section>
     </main>
   </body>

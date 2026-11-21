@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom Theme Colors with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                100: "#dbeafe",
+                200: "#bfdbfe",
+              },
+              secondary: {
+                100: "#f3e8ff",
+                200: "#e9d5ff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="p-6">
+    <main class="mx-auto max-w-md">
+      <article
+        class="rounded-xl border border-secondary-200 bg-primary-100 p-6"
+      >
+        <span class="rounded bg-primary-200 px-2 py-1 text-sm">Featured</span>
+        <h1 class="mt-4 text-xl font-bold">Weekend getaway</h1>
+        <p class="mt-2 text-slate-700">
+          Enjoy a quiet stay surrounded by nature.
+        </p>
+        <button class="mt-4 rounded-lg bg-secondary-100 px-4 py-2">
+          View details
+        </button>
+      </article>
+    </main>
+  </body>
+</html>

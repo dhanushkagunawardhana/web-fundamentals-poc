@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>07-hover-and-focus-states</title>
+    <title>Hover and Focus States with Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="p-8">
+    <p class="mb-3 text-slate-600">
+      Hover over the button, or press Tab to see its focus style.
+    </p>
     <button
-      class="rounded bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="rounded bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-300"
     >
       Explore
     </button>
