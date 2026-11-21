@@ -1,0 +1,23 @@
+TASK 02: Style Tesla sections with Tailwind
+
+Description
+The page has its HTML and custom color palette. Add Tailwind utility classes to style the feature and specs sections.
+
+What to do
+- Edit index.html and add utility classes to the existing elements.
+- Keep the text, HTML structure, and color configuration as they are.
+- Use the primary-100, primary-200, secondary-100, and secondary-200 colors.
+
+Expected result
+- A clean header with a Specs link.
+- A feature card with a colored background, border, and clear text hierarchy.
+- Two readable spec cards arranged in a simple grid.
+- Hover and keyboard-focus styles on interactive links.
+
+Steps
+1. Open index.html in a browser and look at the unstyled page.
+2. Set page colors, then add a centered max-width and spacing to the header and main content.
+3. Style the feature link as a card with background, border, padding, and rounded corners.
+4. Use group and hover/focus utilities to add interaction styles to the feature card and links.
+5. Place the specs in a grid and style each card with background, border, and spacing utilities.
+6. Refresh the page and check the layout, colors, links, hover, and keyboard focus.

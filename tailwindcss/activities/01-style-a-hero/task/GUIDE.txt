@@ -1,0 +1,22 @@
+TASK 01: Style a hero with Tailwind
+
+Description
+The page already has its HTML. Add Tailwind utility classes to turn the plain content into a simple Model 3 hero.
+
+What to do
+- Edit index.html and add utility classes to the existing elements.
+- Keep the text and HTML structure as they are.
+- Use Tailwind utilities for layout, spacing, typography, colors, and buttons.
+
+Expected result
+- A full-height hero with a dark background and centered content.
+- A small category label, a prominent heading, and readable description.
+- Two clear buttons displayed side by side.
+
+Steps
+1. Open index.html in a browser and look at the plain page.
+2. Set the page height, background color, and text color.
+3. Center the hero content and add a maximum width, padding, and text alignment.
+4. Use text size, weight, color, and spacing utilities to create a clear heading and description.
+5. Place the buttons in a flex row with a gap, then style each with padding, background, text color, and rounded corners.
+6. Refresh the page and check that the content is readable and both buttons are easy to see.
